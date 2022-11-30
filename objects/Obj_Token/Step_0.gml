@@ -13,5 +13,6 @@ if(Flag_Changes){
 	show_debug_message("Estado: " + string(Attributes[1]) + string(image_index))
 
 	Flag_Changes = false;
+	
 }
 
