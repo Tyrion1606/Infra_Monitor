@@ -3,7 +3,7 @@
 if(Flag_Changes){
 	
 	#region Positioning
-		switch (Atributes[2]) {
+		switch (Attributes[2]) {
 		    case "Master":
 				array_push(Obj_Frame_Master.My_Tokens,id);
 		        break;
