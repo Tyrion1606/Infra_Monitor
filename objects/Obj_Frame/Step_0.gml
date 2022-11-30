@@ -1,6 +1,7 @@
 /// @description 
 
 if(Flag_Positioning){
+	//show_debug_message(id.My_Tokens)
 	var first_x = id.x+24;
 	var first_y = id.y+36;
 	Height = 0;

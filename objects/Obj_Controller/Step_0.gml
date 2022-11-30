@@ -32,7 +32,11 @@ if Flag_Categorize_by_Role {
 	var i_Compute = 0;
 	var i_Infra = 0;
 	var i_Master = 0;
-
+	
+	Obj_Frame_Compute.My_Tokens = array_create(0);	// Clean the array
+	Obj_Frame_Infra.My_Tokens = array_create(0);	// Clean the array
+	Obj_Frame_Master.My_Tokens = array_create(0);	// Clean the array
+	
 	for (var i = 1; i < array_length(Tokens_Data); i++) {
 		var Temp_Token = Tokens[i];
 	    switch (Tokens_Data[i][2]) {
@@ -53,10 +57,13 @@ if Flag_Categorize_by_Role {
 		        break;
 		}
 	}
+
 	Obj_Frame.Flag_Positioning = true;
 	Flag_Categorize_by_Role = false;
 }
 
 
+if Flag_Moving_Screen {
 
 
+}
