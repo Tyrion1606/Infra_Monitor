@@ -25,6 +25,7 @@ if Flag_Set_Attributes {
 			Temp_Token.Attributes[2] = Tokens_Data[i][2];			// Role
 		#endregion
 	}
+	Obj_Token.Flag_Changes = true;
 	Flag_Set_Attributes = false
 }
 

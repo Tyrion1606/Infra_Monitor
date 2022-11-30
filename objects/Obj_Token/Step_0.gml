@@ -1,21 +1,17 @@
 /// @description 
-/*
+
 if(Flag_Changes){
 	
-	#region Positioning
-		switch (Attributes[2]) {
-		    case "Master":
-				array_push(Obj_Frame_Master.My_Tokens,id);
-		        break;
-		    default:
-		        // code here
-		        break;
-		}
-	#endregion
+	switch (Attributes[1]) {
+	    case "Ready":
+	        image_index = 1
+	        break;
+	    default:
+	        image_index = 0
+	        break;
+	}
+	show_debug_message("Estado: " + string(Attributes[1]) + string(image_index))
+
 	Flag_Changes = false;
 }
 
-
-
-
-*/
