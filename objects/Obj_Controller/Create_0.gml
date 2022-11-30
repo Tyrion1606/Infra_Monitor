@@ -4,6 +4,7 @@ show_debug_overlay(true);
 
 Flag_Categorize_by_Role = true;
 
+/*
 Tokens =
 [
 ["CBRDEAPRLX021.EXTRTA.CAIXA.GOV.BR","Ready","Compute"],
@@ -18,10 +19,10 @@ Tokens =
 ["CBRDEAPRLX042.EXTRTA.CAIXA.GOV.BR","Ready","Infra"],
 ["CBRDEAPRLX043.EXTRTA.CAIXA.GOV.BR","Ready","Infra"],
 ["CBRDEAPRLX044.EXTRTA.CAIXA.GOV.BR","Ready","Infra"],
-]
-
+]*/
 
 //show_debug_message(Tokens)
 //show_debug_message(array_length(Tokens))
 
-Fn_Tokens_Load_From_Text_txt("Nodes.txt");
+Tokens = Fn_Array_Load_From_Text_txt("Nodes.txt");
+//show_debug_message("tokens" + string(Tokens))

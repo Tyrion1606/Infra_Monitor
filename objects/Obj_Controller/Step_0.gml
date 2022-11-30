@@ -5,13 +5,14 @@ if Flag_Categorize_by_Role {
 	var i_Infra = 0;
 	var i_Master = 0;
 
-	for (var i = 0; i < array_length(Tokens); ++i) {
+	for (var i = 1; i < array_length(Tokens); i++) {
 		var Temp_Token = instance_create_layer(id.x, id.y, "Tokens", Obj_Token);
 		
-		Temp_Token.Atributes[0] = Tokens[i][0];
-		Temp_Token.Atributes[1] = Tokens[i][1];
-		Temp_Token.Atributes[2] = Tokens[i][2];
-		
+		#region Attributes Ijection
+			Temp_Token.Atributes[0] = Tokens[i][0];			// Name
+			Temp_Token.Atributes[1] = Tokens[i][1];			// Status
+			Temp_Token.Atributes[2] = Tokens[i][2];			// Role
+		#endregion
 	    switch (Tokens[i][2]) {
 		    case "Compute":
 		        Obj_Frame_Compute.My_Tokens[i_Compute] = Temp_Token;

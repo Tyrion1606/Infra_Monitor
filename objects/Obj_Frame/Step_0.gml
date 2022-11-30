@@ -1,14 +1,14 @@
 /// @description 
 
 if(Flag_Positioning){
-	var first_x = id.x+20;
-	var first_y = id.y+30;
+	var first_x = id.x+24;
+	var first_y = id.y+36;
 	Height = 0;
 	Width = 0;
 	image_yscale = 1;
 	for(var i = 0 ; i < array_length(My_Tokens) ; i++){
-		My_Tokens[i].x = first_x+(130*Width);
-		My_Tokens[i].y = first_y+(80*Height);
+		My_Tokens[i].x = first_x+(156*Width);
+		My_Tokens[i].y = first_y+(96*Height);
 		Width++;
 		if (Width >= Max_Width){
 			Height++;
@@ -16,7 +16,7 @@ if(Flag_Positioning){
 			image_yscale += (2/3)
 		}
 	}
-	
+
 	Flag_Positioning = false
 }
 

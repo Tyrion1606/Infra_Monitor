@@ -3,6 +3,8 @@
 image_speed = 0;
 image_index = 0;
 
+Text_Slot_Size = 12;
+
 Flag_Changes = false;
 
 Atributes = array_create(0);
