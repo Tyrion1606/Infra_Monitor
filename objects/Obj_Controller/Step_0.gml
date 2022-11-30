@@ -62,8 +62,3 @@ if Flag_Categorize_by_Role {
 	Flag_Categorize_by_Role = false;
 }
 
-
-if Flag_Moving_Screen {
-
-
-}
