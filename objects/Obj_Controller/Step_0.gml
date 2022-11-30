@@ -62,4 +62,3 @@ if Flag_Categorize_by_Role {
 	Obj_Frame.Flag_Positioning = true;
 	Flag_Categorize_by_Role = false;
 }
-
